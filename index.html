@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuraQube — Strategy. Innovation. Execution</title>
+  <meta name="description" content="NeuraQube — Consulting, Services and Product accelerators for Generative AI, Quantum Computing and Cloud architecture." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased text-slate-800 bg-white">
+
+  <header class="backdrop-blur bg-white/50 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/img/logo.svg" alt="NeuraQube logo" class="h-9 w-9"/>
+        <div>
+          <div class="font-semibold text-lg">NeuraQube</div>
+          <div class="text-xs text-slate-500">Strategy. Innovation. Execution</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="services.html" class="hover:underline">Services</a>
+        <a href="products.html" class="hover:underline">Products</a>
+        <a href="contact.html" class="text-white bg-gradient-to-r from-indigo-500 via-violet-500 to-pink-500 px-4 py-2 rounded-md shadow">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div id="animatedGradient" class="absolute inset-0 -z-10"></div>
+
+      <div class="max-w-6xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-12">
+        <div class="w-full lg:w-1/2">
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Strategy. Innovation. Execution — in Emerging Technologies.</h1>
+          <p class="mt-6 text-slate-600 max-w-xl">We help enterprises adopt Generative AI and Quantum technologies responsibly — from strategy and governance to productisation and cloud-native delivery.</p>
+          <div class="mt-8 flex gap-4">
+            <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-white bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-600 shadow">Schedule a Call</a>
+            <a href="services.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-slate-200">Explore Services</a>
+          </div>
+          <ul class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-600">
+            <li><strong>Cloud & Architecture</strong><br/>Azure & AWS</li>
+            <li><strong>Generative AI</strong><br/>Governance & Productisation</li>
+            <li><strong>Quantum</strong><br/>Readiness & Simulations</li>
+          </ul>
+        </div>
+
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <img src="assets/img/hero-illustration.svg" alt="abstract tech illustration" class="max-w-md">
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold">What we do</h2>
+      <p class="mt-2 text-slate-600">Practical consulting, product accelerators and managed services to make adoption of emerging tech fast and low-risk.</p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="p-6 border rounded-lg">
+          <h3 class="font-semibold">AI Strategy & Governance</h3>
+          <p class="mt-2 text-sm text-slate-600">Roadmaps, governance, risk assessment and responsible adoption frameworks.</p>
+        </article>
+        <article class="p-6 border rounded-lg">
+          <h3 class="font-semibold">Productisation & MVPs</h3>
+          <p class="mt-2 text-sm text-slate-600">Build and ship GenAI-powered products and cloud-native services rapidly.</p>
+        </article>
+        <article class="p-6 border rounded-lg">
+          <h3 class="font-semibold">Quantum Readiness</h3>
+          <p class="mt-2 text-sm text-slate-600">Assessments, simulations and integration paths for quantum-assisted workflows.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-slate-50">
+      <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl font-semibold">Ready to explore a pilot?</h3>
+          <p class="text-slate-600">We scope 4–6 week pilots to demonstrate value quickly.</p>
+        </div>
+        <a href="contact.html" class="px-5 py-3 rounded-md bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-600 text-white">Request a Pilot</a>
+      </div>
+    </section>
+
+    <footer class="mt-12 border-t">
+      <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+        <div>© 2025 NeuraQube — All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="privacy.html" class="hover:underline">Privacy</a>
+          <a href="terms.html" class="hover:underline">Terms</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const g = document.getElementById('animatedGradient');
+    g.style.background = 'linear-gradient(120deg, rgba(99,102,241,0.18), rgba(139,92,246,0.12), rgba(236,72,153,0.08))';
+    g.style.mixBlendMode = 'overlay';
+    g.style.filter = 'blur(60px)';
+    g.style.transform = 'translateY(-10%)';
+
+    let t = 0;
+    function animate() {
+      t += 0.002;
+      const x = Math.sin(t) * 30;
+      const y = Math.cos(t/1.5) * 20;
+      g.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+
+</body>
+</html>
